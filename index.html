@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Calculadora Media Combustivel
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body id="body">
+        <div class="container">
+            <h1 class="page-title">
+                CALCULADORA MEDIA COMBUSTIVEL
+            </h1>
+            <select id="combustiveis">
+                <option value="gasolina">Gasolina</option>
+                <option value="etanol">Etanol</option>
+                <option value="diesel">Diesel</option>
+                <option value="dieselS10">DIesel S10</option>
+            </select>
+            <p class="quilometragem">Informe a Km Inicial</p>
+            <input type="number" id="kmInicial" placeholder="Digite aqui"/><br>
+            <p class="quilometragem">Informe a Km Final</p>
+            <input type="number" id="kmFinal" placeholder="Digite aqui"/><br>
+            <p class="litros">Informe a Quantidade de Litros</p>
+            <input type="number" id="qtdLitros" placeholder="Digite aqui"/><br>
+            <p class="valor">Informe o valor total gasto</p>
+            <input type="number" id="valorTotal" placeholder="Digite aqui"/><br>
+            <button type="submit" onclick="calcular()">CALCULAR</button>
+        </div>
+        <script src="app.js"></script>
+        
+    </body>
+</html>
