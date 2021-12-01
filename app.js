@@ -9,15 +9,6 @@ function calcular() {
     let kmRodados = kmFinal - kmInicial;
     let mediaKm = kmRodados / quantLitros;
     let custoKm = (kmRodados / valorTotal).toFixed(2);
-    console.log(option)
-    console.log(quantLitros)
-    console.log(valorTotal)
-    console.log(valorUnit)
-    console.log(kmInicial)
-    console.log(kmFinal)
-    console.log(kmRodados)
-    console.log(mediaKm)
-    console.log(custoKm)
 
     
     let table = document.createElement('table');
