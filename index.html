@@ -13,6 +13,7 @@
             <h1 class="page-title">
                 CALCULADORA MEDIA COMBUSTIVEL
             </h1>
+            Selecione o tipo de Combustivel: 
             <select id="combustiveis">
                 <option value="gasolina">Gasolina</option>
                 <option value="etanol">Etanol</option>
@@ -30,6 +31,20 @@
             <button type="submit" onclick="calcular()">CALCULAR</button>
         </div>
         <script src="app.js"></script>
-        
+        <div class="relatorio">
+            <table id="tabela" border="1px" cellpadding="5px" cellspacing="0">
+                <tr class="cabecalho">
+                    <td>Combustivel</td>
+                    <td>Km Inicial</td>
+                    <td>Km Final</td>
+                    <td>Qt Litros</td>
+                    <td>Valor/Lt</td>
+                    <td>Valor Total</td>
+                    <td>Km Rodados</td>
+                    <td>Media/Km</td>
+                    <td>Custo/Km</td>
+                </tr> 
+            </table>
+        </div>
     </body>
 </html>
