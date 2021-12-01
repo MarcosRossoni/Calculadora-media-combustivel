@@ -2,12 +2,12 @@ function calcular() {
     let select = document.getElementById("combustiveis");
     let option = select.options[select.selectedIndex].text;
     let quantLitros = parseInt(document.getElementById("qtdLitros").value);
-    let valorTotal = (parseInt(document.getElementById("valorTotal").value)).toFixed(2);
+    let valorTotal = parseInt(document.getElementById("valorTotal").value);
     let valorUnit = (valorTotal / quantLitros).toFixed(2);
     let kmInicial = parseInt(document.getElementById("kmInicial").value);
     let kmFinal = parseInt(document.getElementById("kmFinal").value);
     let kmRodados = kmFinal - kmInicial;
-    let mediaKm = (kmRodados / quantLitros).toFixed(3);
+    let mediaKm = kmRodados / quantLitros;
     let custoKm = (kmRodados / valorTotal).toFixed(2);
     console.log(option)
     console.log(quantLitros)
@@ -28,15 +28,15 @@ function calcular() {
     table.appendChild(tbody);
 
     //let linha1 = document.createElement('tr');
-    //let cabecalho1 = document.createElement('th');
+   // let cabecalho1 = document.createElement('th');
     //cabecalho1.innerHTML = "Combustivel";
     //let cabecalho2 = document.createElement('th');
     //cabecalho2.innerHTML = "Km Inicial";
     //let cabecalho3 = document.createElement('th');
     //cabecalho3.innerHTML = "Km Final";
     //let cabecalho4 = document.createElement('th');
-    //cabecalho4.innerHTML = "Qt LT";
-    //let cabecalho5 = document.createElement('th');
+   // cabecalho4.innerHTML = "Qt LT";
+   //let cabecalho5 = document.createElement('th');
     //cabecalho5.innerHTML = "Valor/Lt";
     //let cabecalho6 = document.createElement('th');
     //cabecalho6.innerHTML = "Valor Total";
