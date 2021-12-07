@@ -26,6 +26,20 @@ body {
     text-align: center;  
 }
 
+table {
+    margin: auto;
+}
+
 .cabecalho {
     font-weight: bold;
 }
+
+.media {
+    padding: 10px;
+    font-weight: bold;
+}
+
+button {
+    margin: 10px;
+}
+

@@ -13,12 +13,12 @@
             <h1 class="page-title">
                 CALCULADORA MEDIA COMBUSTIVEL
             </h1>
-            Selecione o tipo de Combustivel: 
+            <p>Selecione o tipo de Combustivel: </p> 
             <select id="combustiveis">
                 <option value="gasolina">Gasolina</option>
                 <option value="etanol">Etanol</option>
                 <option value="diesel">Diesel</option>
-                <option value="dieselS10">DIesel S10</option>
+                <option value="dieselS10">Diesel S10</option>
             </select>
             <p class="quilometragem">Informe a Km Inicial</p>
             <input type="number" id="kmInicial" placeholder="Digite aqui"/><br>
@@ -29,6 +29,7 @@
             <p class="valor">Informe o valor total gasto</p>
             <input type="number" id="valorTotal" placeholder="Digite aqui"/><br>
             <button type="submit" onclick="calcular()">CALCULAR</button>
+            <button type="submit" id="btnMedia">CALCULAR MEDIA</button>
         </div>
         <script src="app.js"></script>
         
@@ -46,6 +47,9 @@
                     <td>Custo/Km</td>
                 </tr> 
             </table>
+
+            <div class="media">Custo medio por Km: </div>
+            <div class="media" id="mediaCustoPorKm"></div>
         </div>
             
     </body>
