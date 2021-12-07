@@ -43,6 +43,11 @@ function calcular() {
     );
     
     custoPorKm.push(Number(custoKm));
+
+    document.getElementById("kmInicial").value = "";
+    document.getElementById("kmFinal").value = "";
+    document.getElementById("qtdLitros").value = "";
+    document.getElementById("valorTotal").value = "";
 }
 
 
@@ -53,3 +58,5 @@ document.querySelector("#btnMedia").addEventListener("click", (ev) => {
   
     return (divMedia.innerHTML = resultado).toFixed(2).replace(".", ",");
   });
+
+  
