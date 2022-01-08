@@ -1,0 +1,16 @@
+Calculadora de media de combustivel
+
+Esta aplicacao foi criada para fins de treinamento e aplicacao de conceitos, aprendidos em meus estudos de programacao em HTML e JS.
+
+Seu funcionamento e relativamente simples, o usuario informa os valores na tela inicial que foi desenvolvida em HTML puro, essa informacoes sao recolhidas pelo JS, onde o mesmo faz o tratamento das informacoes inseridas, devolvendo para o usuario em forma de tabela, que vai sendo construida dinamicamente, a cada lancamento que o usuario realiza, utiliza o metodo de creatElement para que a tabela possa ser criada dinamicamente para o usuario.
+
+Para que haja um funcionamento correto, e preciso ter as seguintes informacoes:
+- Tipo de combustivel, ao qual ja existe uma lista para ser escolhida;
+- Km inicial do veiculo;
+- Km final do veiculo;
+- Quantidade de litros;
+- Valor total pago.
+
+Com essas informacoes inseridas, ao clicar no botao calcular vai ser gerado uma tabela onde vai ser apresentado o tipo de combustivel que foi utilizado, a Km inicial e final que o usuario inseriu, a quantidade de litros e o valor total que o usuario tambem inseriu, alem dessas informacoes tbm tras novas informacoes com que foram trazidas a partir de calculos realizados no JS, que seria o valor por L, a media de consumo por Km, a quantidade total de Km rodados e o custo por Km.
+
+Com o botao calcular media, o sistema vai pegar todas os lancamentos feitos ate o momento e vai trazer uma media de custo de todos o lancamentos realizados pelo usuario.
