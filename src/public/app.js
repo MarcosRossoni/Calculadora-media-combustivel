@@ -25,6 +25,7 @@ function calcular() {
     let valorTotal = parseInt(document.getElementById("valorTotal").value);
     let valorUnit = (valorTotal / quantLitros).toFixed(2);
     let kmInicial = parseInt(document.getElementById("kmInicial").value);
+    console.log(kmInicial)
     let kmFinal = parseInt(document.getElementById("kmFinal").value);
     let kmRodados = kmFinal - kmInicial;
     let mediaKm = (kmRodados / quantLitros).toFixed(2);

@@ -4,6 +4,23 @@ Esta aplicacao foi criada para fins de treinamento e aplicacao de conceitos, apr
 
 Seu funcionamento e relativamente simples, o usuario informa os valores na tela inicial que foi desenvolvida em HTML puro, essa informacoes sao recolhidas pelo JS, onde o mesmo faz o tratamento das informacoes inseridas, devolvendo para o usuario em forma de tabela, que vai sendo construida dinamicamente, a cada lancamento que o usuario realiza, utiliza o metodo de creatElement para que a tabela possa ser criada dinamicamente para o usuario.
 
+Para que o server da aplicacao rode perfeitamente deve esta instalado em sua maquina o NodeJs juntamente com o paco Express
+
+Instalacao para Windows:
+- Realizar o dowload pelo site oficial do NodeJs https://nodejs.org/en/download/
+- Apos instalar o NodeJs em sua maquina vc deve instalar o pacote Express utilizando o terminal com os seguintes comandos
+    *npm install express
+
+Instalacao para Linux:
+- Para instalar o NodeJs no linux deve executar os seguintes comandos no terminal
+    * sudo apt-get install curl
+    * curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+    * sudo apt-get install -y nodejs
+- Apos instalar o NodeJs em sua maquina vc deve instalar o pacote Express utilizando o terminal com os seguintes comandos
+    *npm install express  
+
+Para iniciar o servidor da aplicacao use o comando "npm start"   
+
 Para que haja um funcionamento correto, e preciso ter as seguintes informacoes:
 - Tipo de combustivel, ao qual ja existe uma lista para ser escolhida;
 - Km inicial do veiculo;

@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+
+<html>
     <head>
-        <meta charset="UTF-8">
         <title>
             Calculadora Media Combustivel
         </title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../public/style.css">
     </head>
 
     <body id="body">
@@ -31,7 +30,6 @@
             <button type="submit" onclick="calcular()">CALCULAR</button>
             <button type="submit" id="btnMedia">CALCULAR MEDIA</button>
         </div>
-        <script src="app.js"></script>
         
         <div class="relatorio">
             <table id="tabela" border="1px" cellpadding="5px" cellspacing="0">
@@ -50,7 +48,11 @@
 
             <div class="media">Custo medio por Km: </div>
             <div class="media" id="mediaCustoPorKm"></div>
+            <button type="submit" onclick="gerarPdf()">GERAR PDF</button>
         </div>
             
     </body>
+
+    <script src="../public/app.js"></script>
+
 </html>
