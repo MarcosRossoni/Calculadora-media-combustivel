@@ -29,7 +29,7 @@ function calcular() {
     let kmFinal = parseInt(document.getElementById("kmFinal").value);
     let kmRodados = kmFinal - kmInicial;
     let mediaKm = (kmRodados / quantLitros).toFixed(2);
-    let custoKm = (kmRodados / valorTotal).toFixed(2);
+    let custoKm = (valorTotal / kmRodados).toFixed(2);
 
     criarTabela(
         option,
